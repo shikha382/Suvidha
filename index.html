@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    
+    <title>SUVIDHA - Smart Urban Virtual Intelligent Digital Helpdesk for All</title>
+    <meta name="description" content="SUVIDHA: Your one-stop platform for civic services, grievance redressal, and citizen engagement. Submit complaints, track status, and get solutions." />
+    <meta name="author" content="SUVIDHA Team" />
+    <meta name="keywords" content="grievance, citizen services, government, complaints, civic, smart city, digital India" />
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#1e3a5f" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="SUVIDHA" />
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="SUVIDHA - Smart Urban Digital Helpdesk" />
+    <meta property="og:description" content="Your one-stop platform for civic services and grievance redressal. Empowering citizens to make a difference." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://suvidha.gov.in" />
+    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@SUVIDHA_GOV" />
+    <meta name="twitter:title" content="SUVIDHA - Smart Urban Digital Helpdesk" />
+    <meta name="twitter:description" content="Submit complaints, track status, and get solutions - all in one place." />
+    <meta name="twitter:image" content="/og-image.png" />
+    
+    <!-- Accessibility -->
+    <meta name="color-scheme" content="light dark" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Service Worker Registration for PWA -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(() => {});
+        });
+      }
+    </script>
+  </body>
+</html>
