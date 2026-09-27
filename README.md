@@ -184,8 +184,15 @@ The project is deployed on multiple platforms for maximum uptime:
 
 ## 👥 Team & Credits
 
-**Lead Developer**: [Kartik And Team ]
-**UI/UX Design**: Modern government design standards
+This project is built by a team of three:
+
+| Member | Role |
+|--------|------|
+| **Shikha** | Project Lead & Full-Stack Developer — overall architecture, frontend (React + TypeScript), Supabase integration, deployment |
+| **Kartik** | Backend & AI Integration — database design, API/edge functions, AI-powered complaint categorization |
+| **Richa** | UI/UX Design & Testing — interface design, responsive layouts, accessibility, QA |
+
+**Design Standards**: Modern government design standards
 **AI Integration**: OpenAI GPT-4 powered responses
 **Database Design**: Optimized for government scale operations
 
